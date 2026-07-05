@@ -1,0 +1,722 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.nav {
+  background: #1f2225;
+  border-bottom: 0.5px solid grey;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  color: white;
+  align-items: center;
+}
+.nav h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  padding-left: 10%;
+  font-family: "Asimovian", sans-serif;
+  font-weight: 500;
+  font-style: bold;
+  background-image: linear-gradient(90deg, purple, violet, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.nav h1:hover {
+  color: white;
+  text-shadow:
+    0 0 7px purple,
+    0 0 10px magenta,
+    0 0 21px violet,
+    0 0 42px magenta,
+    0 0 82px purple;
+  opacity: 0.8;
+}
+
+.nav .menu {
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+.nav .menu #item {
+  margin: 0 15px;
+}
+
+.nav .menu #item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav .menu #item a:hover {
+  color: white;
+  text-shadow:
+    0 0 7px purple,
+    0 0 10px magenta,
+    0 0 21px violet,
+    0 0 42px magenta,
+    0 0 82px purple;
+  opacity: 0.8;
+}
+.nav button {
+  position: relative;
+  padding: 15px 35px;
+  margin-right: 10%;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, violet, purple);
+  color: black;
+  font-family: "Elms Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.nav button::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  background: linear-gradient(45deg, violet, magenta, purple);
+  border-radius: inherit;
+  z-index: -1;
+  filter: blur(15px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav button:hover::before {
+  opacity: 1;
+}
+
+.nav button:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+.page1 {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  background-color: black;
+  border-bottom: 0.5px solid grey;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Elms Sans", sans-serif;
+  overflow: hidden;
+}
+.box {
+  width: min(500px, 90%);
+  padding: 15px 0;
+  margin-top: 120px;
+  font-size: 23px;
+  color: violet;
+  background: black;
+  text-align: center;
+  border: 2px solid purple;
+  border-radius: 50px;
+}
+.box:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.main-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+.hightext {
+  background: linear-gradient(90deg, purple, violet, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  text-align: center;
+  font-weight: bolder;
+  margin-top: -30px;
+}
+.discription {
+  width: min(700px, 90%);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  text-align: center;
+  color: white;
+  margin-top: -30px;
+}
+.action-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  gap: 5px;
+  margin-top: 20px;
+}
+.name-input {
+  font-family: "Elms Sans", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  padding: 10px 10px;
+  outline: none;
+  border-radius: 30px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: 1px purple solid;
+}
+.submitn {
+  position: relative;
+  width: 100%;
+  padding: 10px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, violet, purple);
+  color: black;
+  font-family: "Elms Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.submitn::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  background: linear-gradient(45deg, violet, magenta, purple);
+  border-radius: inherit;
+  z-index: -1;
+  filter: blur(15px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.submitn:hover::before {
+  opacity: 1;
+}
+
+.submitn:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+#features {
+  min-height: 100vh;
+  height: auto;
+  padding-bottom: 80px;
+  width: 100%;
+  background: #1f2225;
+  border-bottom: 0.5px solid grey;
+  color: white;
+  font-family: "Elms Sans", sans-serif;
+}
+#features h1 {
+  background: linear-gradient(90deg, violet, purple 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 10%;
+  margin: 0px 0 10px 0;
+}
+#features p {
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 5px;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+#features .flip-card {
+  background: transparent;
+  width: min(350px, 90vw);
+  height: 600px;
+  perspective: 1000px;
+  flex-shrink: 0;
+}
+
+#features .title1 {
+  font-size: 30px;
+  font-weight: 900;
+
+  text-align: center;
+  margin: 0;
+}
+
+#features .title2 {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+#features .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+#features .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+#features .flip-card-front,
+#features .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid purple;
+  border-radius: 1rem;
+}
+
+#features .flip-card-front {
+  background: black;
+  color: violet;
+}
+
+.flip-card-back {
+  background: linear-gradient(120deg, violet 30%, magenta 88%, magenta 40%);
+  color: black;
+  transform: rotateY(180deg);
+}
+#how-it-works {
+  background: black;
+  color: white;
+  font-family: "Elms Sans", sans-serif;
+  padding: 100px 80px;
+  margin: 0;
+  border-bottom: 0.5px solid grey;
+}
+
+#how-it-works h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  text-align: center;
+  background: linear-gradient(90deg, violet, purple 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#how-it-works .subtitle {
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 100px;
+}
+
+.work-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: black;
+}
+
+.work-card {
+  width: min(350px, 90%);
+  padding: 35px;
+  background: black;
+  border: 1px solid purple;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.work-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 40px magenta;
+}
+
+.work-card h2 {
+  color: violet;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.work-card p {
+  color: white;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+#templates {
+  background: #1f2225;
+  color: white;
+  font-family: "Elms Sans", sans-serif;
+  padding: 100px 80px;
+  margin: 0;
+  border-bottom: 0.5px solid grey;
+}
+#templates h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  text-align: center;
+  background: linear-gradient(90deg, violet, purple 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#templates p {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.temp-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.template-card {
+  position: relative;
+  height: 460px;
+  width: 400px;
+  border-radius: 20px;
+  cursor: pointer;
+  background: black;
+  display: flex;
+  border: 1px solid purple;
+  flex-direction: column;
+  align-items: center;
+}
+.template-card:hover {
+  transform: translateY(-20px);
+}
+.template-card h3 {
+  color: violet;
+  font-size: 28px;
+}
+.template-card p {
+  color: white;
+}
+.template-card img {
+  margin-top: 5%;
+  width: 30%;
+  height: 30%;
+  align-items: center;
+  object-fit: cover;
+  transition: 0.5s;
+  background: black;
+  border-radius: 5px;
+  color: violet;
+}
+.template-card img {
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.template-card img:hover {
+  transform: scale(2);
+  z-index: 10;
+  border-radius: 5px;
+}
+.template-card button {
+  position: relative;
+  width: 50%;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, violet, purple);
+  color: black;
+  font-family: "Elms Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.template-card button::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  background: linear-gradient(45deg, violet, magenta, purple);
+  border-radius: inherit;
+  z-index: -1;
+  filter: blur(15px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.template-card button:hover::before {
+  opacity: 1;
+}
+
+.template-card button:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+
+#faq {
+  background: black;
+  color: white;
+  font-family: "Elms Sans", sans-serif;
+  padding: 100px 80px;
+  margin: 0;
+  border-bottom: 0.5px solid grey;
+}
+#faq h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  text-align: center;
+  background: linear-gradient(90deg, violet, purple 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#faq p {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 50px 0;
+}
+#faq .front h3 {
+  font-size: 25px;
+}
+#faq .back p {
+  color: black;
+}
+#faq .faq-card {
+  position: relative;
+  width: min(1000px, 90vw);
+  height: 100px;
+  perspective: 1000px;
+}
+
+#faq .faq-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+#faq .faq-card:hover .faq-card-inner {
+  transform: rotateY(180deg);
+}
+
+#faq .front,
+#faq .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border: 1px solid purple;
+  border-radius: 20px;
+}
+
+#faq .front {
+  background: black;
+  color: violet;
+}
+
+#faq .back {
+  background: linear-gradient(120deg, violet 30%, magenta 98%, purple 150%);
+  transform: rotateY(180deg);
+}
+
+#footer h1 {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 8rem);
+  display: flex;
+  padding: 5% 0 5% 0;
+  margin-left: 31%;
+  max-width: fit-content;
+  font-family: "Asimovian", sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(90deg, violet, violet, purple, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#footer {
+  background: #1f2225;
+}
+
+#footer h1:hover {
+  color: white;
+  text-shadow:
+    0 0 7px purple,
+    0 0 10px magenta,
+    0 0 21px violet,
+    0 0 42px magenta,
+    0 0 82px purple;
+  opacity: 3;
+}
+.footer-top {
+  font-family: "Elms Sans", sans-serif;
+  font-weight: bolder;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 50px;
+  margin-bottom: 50px;
+  place-items: center;
+}
+.footer-links h3 {
+  color: purple;
+  font-size: 2rem;
+  text-align: center;
+}
+.footer-links a {
+  font-size: 1.25rem;
+  display: block;
+  color: #a9b7d0;
+  text-decoration: none;
+  margin: 12px 0;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.footer-links a:hover {
+  color: violet;
+  padding-left: 6px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding-top: 20px;
+  color: #9eb0ca;
+}
+
+#footer p {
+  font-family: "Elms Sans", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0;
+  color: violet;
+  padding-bottom: 5%;
+}
+
+#current-year {
+  color: violet;
+  font-weight: bold;
+}
+.fixed-btn {
+  font-family: "Elms Sans", sans-serif;
+  font-weight: bolder;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+
+  background: #111;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+
+  z-index: 1000;
+}
+
+.fixed-btn:hover {
+  color: violet;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-container,
+  .temp-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    padding: 20px;
+  }
+
+  #features h1,
+  #templates h1,
+  #faq h1,
+  #how-it-works h1 {
+    font-size: 2rem;
+  }
+
+  .template-card {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .work-container,
+  .temp-grid {
+    flex-wrap: wrap;
+  }
+
+  .card-container {
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    flex-direction: row;
+  }
+
+  .work-container,
+  .temp-grid,
+  .card-container {
+    flex-wrap: wrap;
+  }
+}
