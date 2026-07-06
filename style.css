@@ -3,6 +3,7 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
 .nav {
   background: #1f2225;
   border-bottom: 0.5px solid grey;
@@ -222,7 +223,7 @@ body {
   color: white;
   font-family: "Elms Sans", sans-serif;
 }
-#features h1 {
+#features h2 {
   background: linear-gradient(90deg, violet, purple 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -315,7 +316,7 @@ body {
   border-bottom: 0.5px solid grey;
 }
 
-#how-it-works h1 {
+#how-it-works h2 {
   font-size: 70px;
   font-weight: bolder;
   text-align: center;
@@ -355,9 +356,9 @@ body {
   box-shadow: 0 0 40px magenta;
 }
 
-.work-card h2 {
+.work-card h3 {
   color: violet;
-  font-size: 28px;
+  font-size: 22px;
   margin-bottom: 20px;
 }
 
@@ -375,7 +376,7 @@ body {
   margin: 0;
   border-bottom: 0.5px solid grey;
 }
-#templates h1 {
+#templates h2 {
   font-size: 70px;
   font-weight: bolder;
   text-align: center;
@@ -389,7 +390,7 @@ body {
   font-size: 25px;
   color: white;
   margin-top: 5px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .temp-grid {
@@ -414,6 +415,7 @@ body {
   transform: translateY(-20px);
 }
 .template-card h3 {
+  margin-bottom: 0;
   color: violet;
   font-size: 28px;
 }
@@ -421,9 +423,8 @@ body {
   color: white;
 }
 .template-card img {
-  margin-top: 5%;
-  width: 30%;
-  height: 30%;
+  margin-top: 3%;
+  height: 50%;
   align-items: center;
   object-fit: cover;
   transition: 0.5s;
@@ -437,7 +438,7 @@ body {
 }
 
 .template-card img:hover {
-  transform: scale(2);
+  transform: scale(3);
   z-index: 10;
   border-radius: 5px;
 }
@@ -485,7 +486,7 @@ body {
   margin: 0;
   border-bottom: 0.5px solid grey;
 }
-#faq h1 {
+#faq h2 {
   font-size: 70px;
   font-weight: bolder;
   text-align: center;
@@ -561,7 +562,7 @@ body {
   transform: rotateY(180deg);
 }
 
-#footer h1 {
+#footer h2 {
   margin: 0;
   font-size: clamp(3rem, 8vw, 8rem);
   display: flex;
@@ -579,7 +580,7 @@ body {
   background: #1f2225;
 }
 
-#footer h1:hover {
+#footer h2:hover {
   color: white;
   text-shadow:
     0 0 7px purple,
@@ -606,7 +607,7 @@ body {
 .footer-links a {
   font-size: 1.25rem;
   display: block;
-  color: #a9b7d0;
+  color: white;
   text-decoration: none;
   margin: 12px 0;
   transition: 0.3s;
@@ -685,10 +686,10 @@ body {
     padding: 20px;
   }
 
-  #features h1,
-  #templates h1,
-  #faq h1,
-  #how-it-works h1 {
+  #features h2,
+  #templates h2,
+  #faq h2,
+  #how-it-works h2 {
     font-size: 2rem;
   }
 
