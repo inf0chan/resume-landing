@@ -149,6 +149,5 @@ This project was built as part of my journey to improve my skills in:
 * HTML5
 * CSS3
 * Responsive Design
-* Frontend Development
 
 **If you liked this project, consider giving it a star on GitHub.**
