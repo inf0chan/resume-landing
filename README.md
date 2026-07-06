@@ -126,7 +126,7 @@ This project improved my understanding of:
 * CSS Layout Systems
 * UI Design Principles
 
-# 📸 Preview
+# Preview
 
 ```
 ResumeFlow
@@ -140,7 +140,7 @@ ResumeFlow
 
 ---
 
-# 👨‍💻 Author
+# Author
 
 Developed by **inf0chan**
 
