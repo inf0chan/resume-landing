@@ -105,7 +105,7 @@ css
         flex-direction:column;
     }
 
-### Problem 5
+### Problem 3
 
 Invalid CSS values like font-style:bold; and background-color:darkgrey.
 
