@@ -3,9 +3,12 @@
 
 **ResumeFlow** is a modern, responsive resume builder landing page UI designed using **HTML semantic tags** and **CSS**. The project focuses on creating a professional user interface with interactive components, responsive layouts, hover effects.
 
+# Live Demo
+**👉 [View Project](https://inf0chan.github.io/resume-landing/)**
+
+# Project Preview
+
 #  Technologies Used
-
-
 HTML(HYPERTEXT MARKUP LANGUAGE)
 
 CSS(CASCADING STYLE SHEET)
