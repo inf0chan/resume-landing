@@ -28,7 +28,7 @@
             <a href="#faq">FAQs</a>
           </li>
         </ul>
-        <button type="submit">Start Free</button>
+        <button type="button" id="loginBtn" class="login-btn">Login</button>
       </nav>
     </header>
     <main>
@@ -237,7 +237,81 @@
         </section>
       </section>
     </main>
+    <dialog id="loginDialog">
+      <article class="login-card">
+        <header class="dialog-header">
+          <h2>Welcome Back</h2>
 
+          <button type="button" id="closeLogin" class="close-btn">
+            &times;
+          </button>
+        </header>
+
+        <form>
+          <section class="input-box">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </section>
+
+          <section class="input-box">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+          </section>
+
+          <button type="submit">Login</button>
+
+          <p>
+            Don't have an account?
+            <a href="#" id="showSignup">Sign Up</a>
+          </p>
+        </form>
+      </article>
+    </dialog>
+    <dialog id="signupDialog">
+      <article class="signup-card">
+        <header class="dialog-header">
+          <h2>Create Account</h2>
+
+          <button type="button" id="closeSignup" class="close-btn">
+            &times;
+          </button>
+        </header>
+
+        <form>
+          <section class="input-box">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required />
+          </section>
+
+          <section class="input-box">
+            <label for="signupEmail">Email</label>
+            <input type="email" id="signupEmail" required />
+          </section>
+
+          <section class="input-box">
+            <label for="signupPassword">Password</label>
+            <input type="password" id="signupPassword" required />
+          </section>
+
+          <button type="submit">Create Account</button>
+
+          <p>
+            Already have an account?
+            <a href="#" id="showLogin">Login</a>
+          </p>
+        </form>
+      </article>
+    </dialog>
     <footer id="footer">
       <h2>ResumeFlow</h2>
       <section class="footer-top">
