@@ -6,8 +6,6 @@
 # Live Demo
 **👉 [View Project](https://inf0chan.github.io/resume-landing/)**
 
-# Project Preview
-
 #  Technologies Used
 HTML(HYPERTEXT MARKUP LANGUAGE)
 
